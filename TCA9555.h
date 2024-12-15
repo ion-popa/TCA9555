@@ -65,6 +65,9 @@ public:
   uint8_t  read1(uint8_t pin);
   bool     setPolarity(uint8_t pin, uint8_t value);    //  input pins only.
   uint8_t  getPolarity(uint8_t pin);
+  bool     pinMode(uint8_t pin, uint8_t mode){return pinMode1(pin,mode);};
+  bool     write(uint8_t pin, uint8_t value){return write(pin, value);};
+  uint8_t  read(uint8_t pin){return read(pin);};
 
 
   //  8 PIN INTERFACE
